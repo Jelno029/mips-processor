@@ -4,7 +4,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity ControlUnit is
 port(
 	op: in std_logic_vector(5 downto 0);
-	RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp1, ALUOp2: out std_logic
+	RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch: out std_logic;
+	ALUOp	: out std_logic_vector(1 downto 0)
 );
 end ControlUnit;
 
@@ -29,6 +30,6 @@ begin
 	MemRead <= lw;
 	MemWrite <= sw;
 	Branch <= beq;
-	ALUOp1 <= rformat;
-	ALUOp2 <= beq; 
+	ALUOp(0) <= rformat;
+	ALUOp(1) <= beq; 
 end rtl;

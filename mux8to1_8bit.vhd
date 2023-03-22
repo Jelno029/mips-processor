@@ -32,5 +32,4 @@ mux4567:mux2to1_8bit port map(mux45out, mux67out, i_select(1), mux4567out);
 
 muxout:mux2to1_8bit port map(mux0123out, mux4567out, i_select(2), o_output);
 
-
 end mux8rtl;
