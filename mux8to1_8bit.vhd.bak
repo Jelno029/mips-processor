@@ -1,0 +1,9 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+entity mux8to1_8bit is
+port(
+		i_0, i_1, i_2, i_3, i_4, i_5, i_6, i_7 : in std_logic_vector(7 downto 0);		-- 8 inputs, 8 bits
+		i_select	:	in std_logic_vector(3 downto 0);		-- 1 selection bit
+		o_output	:	out std_logic_vector(7 downto 0));	-- 1 output
+end mux8to1_8bit;

@@ -54,3 +54,5 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name VHDL_FILE enreg8bit.vhd
 set_global_assignment -name VHDL_FILE mux8to1.vhd
 set_global_assignment -name VHDL_FILE mux8to1_FAIL.vhd
+set_global_assignment -name VHDL_FILE mux2to1_8bit.vhd
+set_global_assignment -name VHDL_FILE mux8to1_8bit.vhd
