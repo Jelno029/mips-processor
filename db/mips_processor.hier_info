@@ -1,0 +1,1957 @@
+|registerFile
+i_regWrite => loadEnable[7].IN1
+i_regWrite => loadEnable[6].IN1
+i_regWrite => loadEnable[5].IN1
+i_regWrite => loadEnable[4].IN1
+i_regWrite => loadEnable[3].IN1
+i_regWrite => loadEnable[2].IN1
+i_regWrite => loadEnable[1].IN1
+i_regWrite => loadEnable[0].IN1
+i_readReg1[0] => mux8to1_8bit:muxReg1.i_select[0]
+i_readReg1[1] => mux8to1_8bit:muxReg1.i_select[1]
+i_readReg1[2] => mux8to1_8bit:muxReg1.i_select[2]
+i_readReg2[0] => mux8to1_8bit:muxReg2.i_select[0]
+i_readReg2[1] => mux8to1_8bit:muxReg2.i_select[1]
+i_readReg2[2] => mux8to1_8bit:muxReg2.i_select[2]
+i_writeReg[0] => decoder3to8:dec.i_X[0]
+i_writeReg[1] => decoder3to8:dec.i_X[1]
+i_writeReg[2] => decoder3to8:dec.i_X[2]
+i_writeData[0] => enreg8bit:reg0.i_pinput[0]
+i_writeData[0] => enreg8bit:reg1.i_pinput[0]
+i_writeData[0] => enreg8bit:reg2.i_pinput[0]
+i_writeData[0] => enreg8bit:reg3.i_pinput[0]
+i_writeData[0] => enreg8bit:reg4.i_pinput[0]
+i_writeData[0] => enreg8bit:reg5.i_pinput[0]
+i_writeData[0] => enreg8bit:reg6.i_pinput[0]
+i_writeData[0] => enreg8bit:reg7.i_pinput[0]
+i_writeData[1] => enreg8bit:reg0.i_pinput[1]
+i_writeData[1] => enreg8bit:reg1.i_pinput[1]
+i_writeData[1] => enreg8bit:reg2.i_pinput[1]
+i_writeData[1] => enreg8bit:reg3.i_pinput[1]
+i_writeData[1] => enreg8bit:reg4.i_pinput[1]
+i_writeData[1] => enreg8bit:reg5.i_pinput[1]
+i_writeData[1] => enreg8bit:reg6.i_pinput[1]
+i_writeData[1] => enreg8bit:reg7.i_pinput[1]
+i_writeData[2] => enreg8bit:reg0.i_pinput[2]
+i_writeData[2] => enreg8bit:reg1.i_pinput[2]
+i_writeData[2] => enreg8bit:reg2.i_pinput[2]
+i_writeData[2] => enreg8bit:reg3.i_pinput[2]
+i_writeData[2] => enreg8bit:reg4.i_pinput[2]
+i_writeData[2] => enreg8bit:reg5.i_pinput[2]
+i_writeData[2] => enreg8bit:reg6.i_pinput[2]
+i_writeData[2] => enreg8bit:reg7.i_pinput[2]
+i_writeData[3] => enreg8bit:reg0.i_pinput[3]
+i_writeData[3] => enreg8bit:reg1.i_pinput[3]
+i_writeData[3] => enreg8bit:reg2.i_pinput[3]
+i_writeData[3] => enreg8bit:reg3.i_pinput[3]
+i_writeData[3] => enreg8bit:reg4.i_pinput[3]
+i_writeData[3] => enreg8bit:reg5.i_pinput[3]
+i_writeData[3] => enreg8bit:reg6.i_pinput[3]
+i_writeData[3] => enreg8bit:reg7.i_pinput[3]
+i_writeData[4] => enreg8bit:reg0.i_pinput[4]
+i_writeData[4] => enreg8bit:reg1.i_pinput[4]
+i_writeData[4] => enreg8bit:reg2.i_pinput[4]
+i_writeData[4] => enreg8bit:reg3.i_pinput[4]
+i_writeData[4] => enreg8bit:reg4.i_pinput[4]
+i_writeData[4] => enreg8bit:reg5.i_pinput[4]
+i_writeData[4] => enreg8bit:reg6.i_pinput[4]
+i_writeData[4] => enreg8bit:reg7.i_pinput[4]
+i_writeData[5] => enreg8bit:reg0.i_pinput[5]
+i_writeData[5] => enreg8bit:reg1.i_pinput[5]
+i_writeData[5] => enreg8bit:reg2.i_pinput[5]
+i_writeData[5] => enreg8bit:reg3.i_pinput[5]
+i_writeData[5] => enreg8bit:reg4.i_pinput[5]
+i_writeData[5] => enreg8bit:reg5.i_pinput[5]
+i_writeData[5] => enreg8bit:reg6.i_pinput[5]
+i_writeData[5] => enreg8bit:reg7.i_pinput[5]
+i_writeData[6] => enreg8bit:reg0.i_pinput[6]
+i_writeData[6] => enreg8bit:reg1.i_pinput[6]
+i_writeData[6] => enreg8bit:reg2.i_pinput[6]
+i_writeData[6] => enreg8bit:reg3.i_pinput[6]
+i_writeData[6] => enreg8bit:reg4.i_pinput[6]
+i_writeData[6] => enreg8bit:reg5.i_pinput[6]
+i_writeData[6] => enreg8bit:reg6.i_pinput[6]
+i_writeData[6] => enreg8bit:reg7.i_pinput[6]
+i_writeData[7] => enreg8bit:reg0.i_pinput[7]
+i_writeData[7] => enreg8bit:reg1.i_pinput[7]
+i_writeData[7] => enreg8bit:reg2.i_pinput[7]
+i_writeData[7] => enreg8bit:reg3.i_pinput[7]
+i_writeData[7] => enreg8bit:reg4.i_pinput[7]
+i_writeData[7] => enreg8bit:reg5.i_pinput[7]
+i_writeData[7] => enreg8bit:reg6.i_pinput[7]
+i_writeData[7] => enreg8bit:reg7.i_pinput[7]
+i_clk => enreg8bit:reg0.i_clk
+i_clk => enreg8bit:reg1.i_clk
+i_clk => enreg8bit:reg2.i_clk
+i_clk => enreg8bit:reg3.i_clk
+i_clk => enreg8bit:reg4.i_clk
+i_clk => enreg8bit:reg5.i_clk
+i_clk => enreg8bit:reg6.i_clk
+i_clk => enreg8bit:reg7.i_clk
+i_clr => enreg8bit:reg0.i_clr
+i_clr => enreg8bit:reg1.i_clr
+i_clr => enreg8bit:reg2.i_clr
+i_clr => enreg8bit:reg3.i_clr
+i_clr => enreg8bit:reg4.i_clr
+i_clr => enreg8bit:reg5.i_clr
+i_clr => enreg8bit:reg6.i_clr
+i_clr => enreg8bit:reg7.i_clr
+o_readData1[0] <= mux8to1_8bit:muxReg1.o_output[0]
+o_readData1[1] <= mux8to1_8bit:muxReg1.o_output[1]
+o_readData1[2] <= mux8to1_8bit:muxReg1.o_output[2]
+o_readData1[3] <= mux8to1_8bit:muxReg1.o_output[3]
+o_readData1[4] <= mux8to1_8bit:muxReg1.o_output[4]
+o_readData1[5] <= mux8to1_8bit:muxReg1.o_output[5]
+o_readData1[6] <= mux8to1_8bit:muxReg1.o_output[6]
+o_readData1[7] <= mux8to1_8bit:muxReg1.o_output[7]
+o_readData2[0] <= mux8to1_8bit:muxReg2.o_output[0]
+o_readData2[1] <= mux8to1_8bit:muxReg2.o_output[1]
+o_readData2[2] <= mux8to1_8bit:muxReg2.o_output[2]
+o_readData2[3] <= mux8to1_8bit:muxReg2.o_output[3]
+o_readData2[4] <= mux8to1_8bit:muxReg2.o_output[4]
+o_readData2[5] <= mux8to1_8bit:muxReg2.o_output[5]
+o_readData2[6] <= mux8to1_8bit:muxReg2.o_output[6]
+o_readData2[7] <= mux8to1_8bit:muxReg2.o_output[7]
+
+
+|registerFile|enreg8bit:reg0
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg0|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg0|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg1|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg1|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg2|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg2|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg3|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg3|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg4|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg4|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg5|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg5|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg6|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg6|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7
+i_pinput[0] => mydff:bit0.i_d
+i_pinput[1] => mydff:bit1.i_d
+i_pinput[2] => mydff:bit2.i_d
+i_pinput[3] => mydff:bit3.i_d
+i_pinput[4] => mydff:bit4.i_d
+i_pinput[5] => mydff:bit5.i_d
+i_pinput[6] => mydff:bit6.i_d
+i_pinput[7] => mydff:bit7.i_d
+i_enload => mydff:bit0.i_en
+i_enload => mydff:bit1.i_en
+i_enload => mydff:bit2.i_en
+i_enload => mydff:bit3.i_en
+i_enload => mydff:bit4.i_en
+i_enload => mydff:bit5.i_en
+i_enload => mydff:bit6.i_en
+i_enload => mydff:bit7.i_en
+i_clk => mydff:bit0.i_clk
+i_clk => mydff:bit1.i_clk
+i_clk => mydff:bit2.i_clk
+i_clk => mydff:bit3.i_clk
+i_clk => mydff:bit4.i_clk
+i_clk => mydff:bit5.i_clk
+i_clk => mydff:bit6.i_clk
+i_clk => mydff:bit7.i_clk
+i_clr => mydff:bit0.i_clr
+i_clr => mydff:bit1.i_clr
+i_clr => mydff:bit2.i_clr
+i_clr => mydff:bit3.i_clr
+i_clr => mydff:bit4.i_clr
+i_clr => mydff:bit5.i_clr
+i_clr => mydff:bit6.i_clr
+i_clr => mydff:bit7.i_clr
+o_poutput[0] <= mydff:bit0.o_q
+o_poutput[1] <= mydff:bit1.o_q
+o_poutput[2] <= mydff:bit2.o_q
+o_poutput[3] <= mydff:bit3.o_q
+o_poutput[4] <= mydff:bit4.o_q
+o_poutput[5] <= mydff:bit5.o_q
+o_poutput[6] <= mydff:bit6.o_q
+o_poutput[7] <= mydff:bit7.o_q
+
+
+|registerFile|enreg8bit:reg7|mydff:bit0
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit1
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit2
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit3
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit4
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit5
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit6
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|enreg8bit:reg7|mydff:bit7
+i_d => int_q.DATAIN
+i_en => int_q.ENA
+i_clk => int_q.CLK
+i_set => int_q.IN0
+i_set => int_q.PRESET
+i_clr => int_q.IN1
+o_q <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+o_qbar <= int_q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|decoder3to8:dec
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[0] => y.IN1
+i_X[1] => y.IN0
+i_X[1] => y.IN0
+i_X[1] => y.IN0
+i_X[1] => y.IN0
+i_X[2] => y.IN1
+i_X[2] => y.IN1
+i_X[2] => y.IN1
+i_X[2] => y.IN1
+o_Y[0] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[1] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[2] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[3] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[4] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[5] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[6] <= y.DB_MAX_OUTPUT_PORT_TYPE
+o_Y[7] <= y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1
+i_0[0] => mux2to1_8bit:mux01.i_0[0]
+i_0[1] => mux2to1_8bit:mux01.i_0[1]
+i_0[2] => mux2to1_8bit:mux01.i_0[2]
+i_0[3] => mux2to1_8bit:mux01.i_0[3]
+i_0[4] => mux2to1_8bit:mux01.i_0[4]
+i_0[5] => mux2to1_8bit:mux01.i_0[5]
+i_0[6] => mux2to1_8bit:mux01.i_0[6]
+i_0[7] => mux2to1_8bit:mux01.i_0[7]
+i_1[0] => mux2to1_8bit:mux01.i_1[0]
+i_1[1] => mux2to1_8bit:mux01.i_1[1]
+i_1[2] => mux2to1_8bit:mux01.i_1[2]
+i_1[3] => mux2to1_8bit:mux01.i_1[3]
+i_1[4] => mux2to1_8bit:mux01.i_1[4]
+i_1[5] => mux2to1_8bit:mux01.i_1[5]
+i_1[6] => mux2to1_8bit:mux01.i_1[6]
+i_1[7] => mux2to1_8bit:mux01.i_1[7]
+i_2[0] => mux2to1_8bit:mux23.i_0[0]
+i_2[1] => mux2to1_8bit:mux23.i_0[1]
+i_2[2] => mux2to1_8bit:mux23.i_0[2]
+i_2[3] => mux2to1_8bit:mux23.i_0[3]
+i_2[4] => mux2to1_8bit:mux23.i_0[4]
+i_2[5] => mux2to1_8bit:mux23.i_0[5]
+i_2[6] => mux2to1_8bit:mux23.i_0[6]
+i_2[7] => mux2to1_8bit:mux23.i_0[7]
+i_3[0] => mux2to1_8bit:mux23.i_1[0]
+i_3[1] => mux2to1_8bit:mux23.i_1[1]
+i_3[2] => mux2to1_8bit:mux23.i_1[2]
+i_3[3] => mux2to1_8bit:mux23.i_1[3]
+i_3[4] => mux2to1_8bit:mux23.i_1[4]
+i_3[5] => mux2to1_8bit:mux23.i_1[5]
+i_3[6] => mux2to1_8bit:mux23.i_1[6]
+i_3[7] => mux2to1_8bit:mux23.i_1[7]
+i_4[0] => mux2to1_8bit:mux45.i_0[0]
+i_4[1] => mux2to1_8bit:mux45.i_0[1]
+i_4[2] => mux2to1_8bit:mux45.i_0[2]
+i_4[3] => mux2to1_8bit:mux45.i_0[3]
+i_4[4] => mux2to1_8bit:mux45.i_0[4]
+i_4[5] => mux2to1_8bit:mux45.i_0[5]
+i_4[6] => mux2to1_8bit:mux45.i_0[6]
+i_4[7] => mux2to1_8bit:mux45.i_0[7]
+i_5[0] => mux2to1_8bit:mux45.i_1[0]
+i_5[1] => mux2to1_8bit:mux45.i_1[1]
+i_5[2] => mux2to1_8bit:mux45.i_1[2]
+i_5[3] => mux2to1_8bit:mux45.i_1[3]
+i_5[4] => mux2to1_8bit:mux45.i_1[4]
+i_5[5] => mux2to1_8bit:mux45.i_1[5]
+i_5[6] => mux2to1_8bit:mux45.i_1[6]
+i_5[7] => mux2to1_8bit:mux45.i_1[7]
+i_6[0] => mux2to1_8bit:mux67.i_0[0]
+i_6[1] => mux2to1_8bit:mux67.i_0[1]
+i_6[2] => mux2to1_8bit:mux67.i_0[2]
+i_6[3] => mux2to1_8bit:mux67.i_0[3]
+i_6[4] => mux2to1_8bit:mux67.i_0[4]
+i_6[5] => mux2to1_8bit:mux67.i_0[5]
+i_6[6] => mux2to1_8bit:mux67.i_0[6]
+i_6[7] => mux2to1_8bit:mux67.i_0[7]
+i_7[0] => mux2to1_8bit:mux67.i_1[0]
+i_7[1] => mux2to1_8bit:mux67.i_1[1]
+i_7[2] => mux2to1_8bit:mux67.i_1[2]
+i_7[3] => mux2to1_8bit:mux67.i_1[3]
+i_7[4] => mux2to1_8bit:mux67.i_1[4]
+i_7[5] => mux2to1_8bit:mux67.i_1[5]
+i_7[6] => mux2to1_8bit:mux67.i_1[6]
+i_7[7] => mux2to1_8bit:mux67.i_1[7]
+i_select[0] => mux2to1_8bit:mux01.i_select
+i_select[0] => mux2to1_8bit:mux23.i_select
+i_select[0] => mux2to1_8bit:mux45.i_select
+i_select[0] => mux2to1_8bit:mux67.i_select
+i_select[1] => mux2to1_8bit:mux0123.i_select
+i_select[1] => mux2to1_8bit:mux4567.i_select
+i_select[2] => mux2to1_8bit:muxout.i_select
+o_output[0] <= mux2to1_8bit:muxout.o_output[0]
+o_output[1] <= mux2to1_8bit:muxout.o_output[1]
+o_output[2] <= mux2to1_8bit:muxout.o_output[2]
+o_output[3] <= mux2to1_8bit:muxout.o_output[3]
+o_output[4] <= mux2to1_8bit:muxout.o_output[4]
+o_output[5] <= mux2to1_8bit:muxout.o_output[5]
+o_output[6] <= mux2to1_8bit:muxout.o_output[6]
+o_output[7] <= mux2to1_8bit:muxout.o_output[7]
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux01
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux23
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux45
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux67
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux0123
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:mux4567
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg1|mux2to1_8bit:muxout
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2
+i_0[0] => mux2to1_8bit:mux01.i_0[0]
+i_0[1] => mux2to1_8bit:mux01.i_0[1]
+i_0[2] => mux2to1_8bit:mux01.i_0[2]
+i_0[3] => mux2to1_8bit:mux01.i_0[3]
+i_0[4] => mux2to1_8bit:mux01.i_0[4]
+i_0[5] => mux2to1_8bit:mux01.i_0[5]
+i_0[6] => mux2to1_8bit:mux01.i_0[6]
+i_0[7] => mux2to1_8bit:mux01.i_0[7]
+i_1[0] => mux2to1_8bit:mux01.i_1[0]
+i_1[1] => mux2to1_8bit:mux01.i_1[1]
+i_1[2] => mux2to1_8bit:mux01.i_1[2]
+i_1[3] => mux2to1_8bit:mux01.i_1[3]
+i_1[4] => mux2to1_8bit:mux01.i_1[4]
+i_1[5] => mux2to1_8bit:mux01.i_1[5]
+i_1[6] => mux2to1_8bit:mux01.i_1[6]
+i_1[7] => mux2to1_8bit:mux01.i_1[7]
+i_2[0] => mux2to1_8bit:mux23.i_0[0]
+i_2[1] => mux2to1_8bit:mux23.i_0[1]
+i_2[2] => mux2to1_8bit:mux23.i_0[2]
+i_2[3] => mux2to1_8bit:mux23.i_0[3]
+i_2[4] => mux2to1_8bit:mux23.i_0[4]
+i_2[5] => mux2to1_8bit:mux23.i_0[5]
+i_2[6] => mux2to1_8bit:mux23.i_0[6]
+i_2[7] => mux2to1_8bit:mux23.i_0[7]
+i_3[0] => mux2to1_8bit:mux23.i_1[0]
+i_3[1] => mux2to1_8bit:mux23.i_1[1]
+i_3[2] => mux2to1_8bit:mux23.i_1[2]
+i_3[3] => mux2to1_8bit:mux23.i_1[3]
+i_3[4] => mux2to1_8bit:mux23.i_1[4]
+i_3[5] => mux2to1_8bit:mux23.i_1[5]
+i_3[6] => mux2to1_8bit:mux23.i_1[6]
+i_3[7] => mux2to1_8bit:mux23.i_1[7]
+i_4[0] => mux2to1_8bit:mux45.i_0[0]
+i_4[1] => mux2to1_8bit:mux45.i_0[1]
+i_4[2] => mux2to1_8bit:mux45.i_0[2]
+i_4[3] => mux2to1_8bit:mux45.i_0[3]
+i_4[4] => mux2to1_8bit:mux45.i_0[4]
+i_4[5] => mux2to1_8bit:mux45.i_0[5]
+i_4[6] => mux2to1_8bit:mux45.i_0[6]
+i_4[7] => mux2to1_8bit:mux45.i_0[7]
+i_5[0] => mux2to1_8bit:mux45.i_1[0]
+i_5[1] => mux2to1_8bit:mux45.i_1[1]
+i_5[2] => mux2to1_8bit:mux45.i_1[2]
+i_5[3] => mux2to1_8bit:mux45.i_1[3]
+i_5[4] => mux2to1_8bit:mux45.i_1[4]
+i_5[5] => mux2to1_8bit:mux45.i_1[5]
+i_5[6] => mux2to1_8bit:mux45.i_1[6]
+i_5[7] => mux2to1_8bit:mux45.i_1[7]
+i_6[0] => mux2to1_8bit:mux67.i_0[0]
+i_6[1] => mux2to1_8bit:mux67.i_0[1]
+i_6[2] => mux2to1_8bit:mux67.i_0[2]
+i_6[3] => mux2to1_8bit:mux67.i_0[3]
+i_6[4] => mux2to1_8bit:mux67.i_0[4]
+i_6[5] => mux2to1_8bit:mux67.i_0[5]
+i_6[6] => mux2to1_8bit:mux67.i_0[6]
+i_6[7] => mux2to1_8bit:mux67.i_0[7]
+i_7[0] => mux2to1_8bit:mux67.i_1[0]
+i_7[1] => mux2to1_8bit:mux67.i_1[1]
+i_7[2] => mux2to1_8bit:mux67.i_1[2]
+i_7[3] => mux2to1_8bit:mux67.i_1[3]
+i_7[4] => mux2to1_8bit:mux67.i_1[4]
+i_7[5] => mux2to1_8bit:mux67.i_1[5]
+i_7[6] => mux2to1_8bit:mux67.i_1[6]
+i_7[7] => mux2to1_8bit:mux67.i_1[7]
+i_select[0] => mux2to1_8bit:mux01.i_select
+i_select[0] => mux2to1_8bit:mux23.i_select
+i_select[0] => mux2to1_8bit:mux45.i_select
+i_select[0] => mux2to1_8bit:mux67.i_select
+i_select[1] => mux2to1_8bit:mux0123.i_select
+i_select[1] => mux2to1_8bit:mux4567.i_select
+i_select[2] => mux2to1_8bit:muxout.i_select
+o_output[0] <= mux2to1_8bit:muxout.o_output[0]
+o_output[1] <= mux2to1_8bit:muxout.o_output[1]
+o_output[2] <= mux2to1_8bit:muxout.o_output[2]
+o_output[3] <= mux2to1_8bit:muxout.o_output[3]
+o_output[4] <= mux2to1_8bit:muxout.o_output[4]
+o_output[5] <= mux2to1_8bit:muxout.o_output[5]
+o_output[6] <= mux2to1_8bit:muxout.o_output[6]
+o_output[7] <= mux2to1_8bit:muxout.o_output[7]
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux01
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux23
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux45
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux67
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux0123
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:mux4567
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|registerFile|mux8to1_8bit:muxReg2|mux2to1_8bit:muxout
+i_0[0] => o_output.IN0
+i_0[1] => o_output.IN0
+i_0[2] => o_output.IN0
+i_0[3] => o_output.IN0
+i_0[4] => o_output.IN0
+i_0[5] => o_output.IN0
+i_0[6] => o_output.IN0
+i_0[7] => o_output.IN0
+i_1[0] => o_output.IN0
+i_1[1] => o_output.IN0
+i_1[2] => o_output.IN0
+i_1[3] => o_output.IN0
+i_1[4] => o_output.IN0
+i_1[5] => o_output.IN0
+i_1[6] => o_output.IN0
+i_1[7] => o_output.IN0
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+i_select => o_output.IN1
+o_output[0] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[1] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[2] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[3] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[4] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[5] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[6] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+o_output[7] <= o_output.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -10,11 +10,11 @@ end mux2to1_8bit;
 
 architecture mux2rtl of mux2to1_8bit is
 
-signal selext	: std_logic_vector(7 downto 0);			-- extended selection bit
+signal selext	: std_logic;			-- extended selection bit
 
 begin
 
-selext	<= (others => i_select);	-- sel bit is extended to 8 bits for direct logic operations
+selext	<= (others <= i_select);	-- sel bit is extended to 8 bits for direct logic operations
 
 o_output	<= (i_0 and not(selext)) or (i_1 and selext);
 

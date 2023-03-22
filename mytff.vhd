@@ -13,7 +13,7 @@ ARCHITECTURE rtl OF mytff IS
 BEGIN
 
 oneBitRegister:
-PROCESS(i_clk, i_set, i_clr);
+PROCESS(i_clk, i_set, i_clr)
 BEGIN
 	IF (i_set = '0') THEN
 		int_q <= '1';
@@ -27,6 +27,7 @@ BEGIN
 				int_q <= not(int_q) after 1 ns;
 			END IF;			-- otherwise no change.
 		END IF;
+	END IF;
 END PROCESS oneBitRegister;
 
 -- Output Driver
