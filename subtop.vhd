@@ -89,9 +89,9 @@ signal inst23to21, inst18to16, inst13to11	: std_logic_vector(2 downto 0);
 signal instSignReduce	: std_logic_vector(7 downto 0);
 signal isrShifted			: std_logic_vector(9 downto 0);
 signal readData1, readData2:	std_logic_vector(7 downto 0);
+signal rfclr	: std_logic := '0';
 signal aluzero				: std_logic := '0';
 signal RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch: std_logic;
-signal ctlOp	: std_logic_vector(5 downto 0);
 signal aluCtlin: std_logic_vector(1 downto 0);
 signal aluCtlout: std_logic_vector(2 downto 0);
 signal writeRegIn: std_logic_vector(2 downto 0);
@@ -101,6 +101,8 @@ signal adderOut: std_logic_vector(9 downto 0);
 signal branchAnd: std_logic;
 
 begin
+
+rfclr <= '1' after 1 ns;
 
 --SPLIT the Instruction:
 opcode		<= i_instruction(31 downto 26);
@@ -118,7 +120,7 @@ ctl:ControlUnit port map(opcode, RegDst, ALUSrc, MemtoReg, RegWrite, MemRead, Me
 aluctl:AluCtrlUnit port map(instSignReduce(5 downto 0), aluCtlin, aluCtlout);
 
 --Register File:
-rf:registerFile port map(RegWrite, inst23to21, inst18to16, writeRegIn, i_writeData, i_clk, '1', readData1, readData2);
+rf:registerFile port map(RegWrite, inst23to21, inst18to16, writeRegIn, i_writeData, i_clk, rfclr, readData1, readData2);
 rtrdMux: mux2to1_3bit port map(inst18to16, inst13to11, RegDst, writeRegIn);
 
 --ALU 

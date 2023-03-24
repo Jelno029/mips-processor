@@ -30,6 +30,6 @@ begin
 	MemRead <= lw;
 	MemWrite <= sw;
 	Branch <= beq;
-	ALUOp(0) <= rformat;
-	ALUOp(1) <= beq; 
+	ALUOp(1) <= rformat;
+	ALUOp(0) <= beq; 
 end rtl;

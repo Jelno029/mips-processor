@@ -30,7 +30,7 @@ end component;
 
 signal zeros : std_logic_vector(7 downto 0) := "00000000";
 signal op18, op28, andout, orout, addout, subout, soltout : std_logic_vector(7 downto 0);
-signal op1, op2: std_logic_vector(9 downto 0);
+signal op1, op2, addout10, subout10: std_logic_vector(9 downto 0);
 
 begin
 
@@ -46,8 +46,10 @@ op2(9 downto 8) <= "00";
 --Operations
 andout	<= op18 and op28;
 orout 	<= op18 or op28;
-adder:CLA_top2 port map(op1, op2, '0', S(7 downto 0) => addout);
-suber:CLA_top2 port map(op1, op2, '1', S(7 downto 0) => subout);
+adder:CLA_top2 port map(op1, op2, '0', addout10);
+suber:CLA_top2 port map(op1, op2, '1', subout10);
+addout <= addout10(7 downto 0);
+subout <= subout10(7 downto 0);
 soltout <= (others => subout(7));	--extend the sign-bit of the difference.
 
 --MUX /output driver
